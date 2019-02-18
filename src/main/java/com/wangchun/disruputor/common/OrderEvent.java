@@ -1,4 +1,4 @@
-package com.wangchun.disruputor;
+package com.wangchun.disruputor.common;
 
 /**
  * <pre>

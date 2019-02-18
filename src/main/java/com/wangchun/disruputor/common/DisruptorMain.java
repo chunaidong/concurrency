@@ -1,4 +1,4 @@
-package com.wangchun.disruputor;
+package com.wangchun.disruputor.common;
 
 import com.lmax.disruptor.BlockingWaitStrategy;
 import com.lmax.disruptor.RingBuffer;
