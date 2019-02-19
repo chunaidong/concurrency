@@ -3,15 +3,10 @@ package com.wangchun.disruputor.muilty;
 import com.lmax.disruptor.RingBuffer;
 
 public class Producer {
-
-
     private RingBuffer<Order> ringBuffer;
-
     public Producer(RingBuffer<Order> ringBuffer) {
         this.ringBuffer = ringBuffer;
     }
-
-
     public void sendData(String uuid){
        long sequence = ringBuffer.next();
        try {
@@ -21,5 +16,4 @@ public class Producer {
            ringBuffer.publish(sequence);
        }
     }
-
 }
